@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.backgrd{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(house.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.backgrd .nav p{
+    font-size: 4vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    /* text-transform: none; */
+    
+}
+
+.fa-solid {
+    width: 40%;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 1vw;
+    position: relative;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.nav ul li::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #d33333;
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    
+}
+.nav ul li:hover::after{
+    width: 100%;
+
+}
+.CONTENT{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+     
+}
+.CONTENT h1{
+    font-size: 75px;
+    margin-top: 85px;
+
+}
+.CONTENT p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 24px 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 3px solid #d33333;
+    background: transparent;
+    color: white;
+    cursor: pointer;  
+    overflow: hidden;
+    position: relative; 
+}
+span{
+    background: #d33333;
+    height: 100%;
+    width: 0;
+    transition: .5s;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: #8f1a1a;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    box-shadow: inset -11px -11px 84px 11px rgba(0,0,0,0.75);
+
+}
+
+.aboutText{
+    width: 50%;
+    padding: 7vw 0;
+    padding-left: 7vw;
+    align-items: center;
+    color: white;
+    padding-top: 10%;
+}   
+
+.aboutText #readMoreBut{
+    align-content: center;
+    text-align: center;
+}
+
+.aboutText #readMoreBut button{
+    border: 3px solid white;
+    background: transparent;
+    color: white;
+}
+
+.aboutText #readMoreBut button:hover{
+    background-color: white;
+    color: #ec4f4f;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+}
+
+.aboutText #readMoreBut button:hover span{
+    width: 100%;
+}
+
+.aboutText #readMoreBut button:hover{
+    border: white;
+
+}
+.aboutText p{
+    font-size: 1.3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.aboutText h1{
+    font-size: 3rem;
+}
+
+
+.aboutImg{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutImg img{
+    height: 70vh;
+    width: 40vw;
+    border-radius: 50%;
+    box-shadow: 11px -11px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: -11px 11px 28px 0px rgba(0,0,0,0.75);
+
+
+}
+
+/* our services */
+.servicesSec{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 6vh 0;
+    background-color: #412722;
+    box-shadow: inset -11px -11px 84px 11px rgba(0,0,0,0.75);
+    text-align: center;
+    color: white;
+    
+
+}
+.services{  
+    display: flex;
+    padding-top: 9vh;
+}
+
+.servicesSec p{
+    color: #ec4f4f;
+    display: inline-block;
+}
+
+.commercial, .office, .resedential{
+    height: 20vh;
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.comText, .resText, .officeText{
+    text-align: justify;
+}
+
+.commercial .comImage img,
+.office .officeImage img,
+.resedential .resImage img{
+    height: 40vh;
+    width: 25vw;
+    border-radius: 5%;
+    opacity: 1;
+
+}
+
+.hover {
+    background:#b11818;
+    height: 40vh;
+    width: 25vw;
+    margin-top: 1vh;
+    border-radius: 5%;
+}
+
+.hover img {
+	opacity: 1;
+	-webkit-transition: .5s linear;
+	transition: .5s linear;
+}
+
+.hover:hover img {
+	opacity: .5;
+}
+
+
+
+/* Contact us page  */
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://cityfurnish.com/blog/wp-content/uploads/2023/07/living-room-filled-with-furniture-red-wall-generative-ai-image-min.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.contact h1{
+    padding-top: 5vh;
+    font-size: 7vh;
+    padding-bottom: 4vh;
+    text-align: center;
+}
+
+.contactForm {
+    border: 2px solid white;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 73vh;
+    width: 49%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    column-gap: 15%;
+    backdrop-filter: blur(6px);
+}
+
+.contactForm .button{
+    text-align: center;
+}
+
+.contactForm .contactButton{
+    border: 2px solid #ec4f4f;
+    background-color: #ec4f4f;
+    margin: 0 auto;
+    width: 12vw;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.contactForm .contactButton:hover{
+    background-color: transparent;
+    border: 2px solid #ec4f4f;
+    transition: .3s ease-in-out;
+
+}
+
+
+form {
+    margin-top: 4vh;
+}
+
+form input{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 5vh;
+    width: 16vw;
+    margin: 2% 0;
+}
+
+.contactForm form label{
+    text-align: left;
+    margin-top: 7vh;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.details .title{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+.details .det{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin-top: 4px;
+}
+
+
+.symbol{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+.symbol a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 50%;
+
+}
+.symbol a i{
+    font-size: 1.6rem;
+    color:#8f1a1a;
+    color: black;
+
+}
+.symbol a:hover{
+    background-color: #111;
+    transition: 0.3s;
+
+}
+.symbol a:hover i{
+    color: white;
+    transition: 0.3s;
+
+}
+.footerbottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+.footerbottom p{
+    color: white;
+}
